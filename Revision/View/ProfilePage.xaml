@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Revision.View.ProfilePage"
+             Title="ProfilePage">
+
+    <Grid RowDefinitions="3*, 7*">
+        <StackLayout Grid.Row="0">
+            <Grid>
+                <Image Source="cappuccino" Aspect="AspectFit"/>
+                <Border Margin="20,20,0,0" HorizontalOptions="Start" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
+                    <Image Source="back_arrow_white" Margin="12" Aspect="AspectFit"/>
+                </Border>
+                <Border Margin="0,20,20,0" HorizontalOptions="End" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
+                    <Image Source="bookmark_white" Margin="10" Aspect="AspectFit" />
+                </Border>
+            </Grid>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Border BackgroundColor="#181D20" VerticalOptions="End" HeightRequest="1000" WidthRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="-1">
+                <StackLayout>
+                    <Border BackgroundColor="#262B2E" HeightRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="0" VerticalOptions="Start">
+                        <StackLayout Margin="30,25,30,25">
+                            <Grid>
+                                <Label Text="Cappuccino" TextColor="White" FontSize="20"/>
+                                <Label Text="$50" FontAttributes="Bold" TextColor="Orange" HorizontalOptions="End" FontSize="20"/>
+                            </Grid>
+                            <Label Text="Milk Coffee" TextColor="White" Margin="0,20,0,0" FontSize="16" Opacity="0.8"/>
+                            <Grid Margin="0,10,0,0">
+                                <HorizontalStackLayout>
+                                    <Border BackgroundColor="Transparent" StrokeThickness="0" HeightRequest="20" WidthRequest="20" HorizontalOptions="Start" VerticalOptions="Center">
+                                        <Image Source="star" Aspect="AspectFit"/>
+                                    </Border>
+                                    <Label Text="4.8" TextColor="White" Margin="5,0,0,0" VerticalOptions="Center"/>
+                                    <Label Text="(2035)" TextColor="White" Margin="10,0,0,0" VerticalOptions="Center" Opacity="0.6"/>
+                                </HorizontalStackLayout>
+                                <Border BackgroundColor="Orange" StrokeThickness="0" StrokeShape="RoundRectangle 10" HeightRequest="35" WidthRequest="-1" HorizontalOptions="End">
+                                    <Label Text="Add to Cart" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="10,-1,10,-1"/>
+                                </Border>
+                            </Grid>
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
+            </Border>
+        </StackLayout>
+
+
+    </Grid>
+</ContentPage>
