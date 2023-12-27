@@ -49,11 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\exo-black.otf" />
+	  <None Remove="Resources\Fonts\exo-bold.otf" />
+	  <None Remove="Resources\Fonts\exo-medium.otf" />
 	  <None Remove="Resources\Images\americano.jpg" />
 	  <None Remove="Resources\Images\back_arrow_black.png" />
 	  <None Remove="Resources\Images\back_arrow_white.png" />
 	  <None Remove="Resources\Images\bookmark_white.png" />
 	  <None Remove="Resources\Images\cappuccino.jpg" />
+	  <None Remove="Resources\Images\magnifying_glass_white.png" />
+	  <None Remove="Resources\Images\man_default_profile.jpg" />
+	  <None Remove="Resources\Images\menu_square_black.png" />
+	  <None Remove="Resources\Images\menu_square_white.png" />
 	  <None Remove="Resources\Images\star.png" />
 	</ItemGroup>
 
@@ -62,6 +69,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\MenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -4,46 +4,61 @@
              x:Class="Revision.View.ProfilePage"
              Title="ProfilePage">
 
-    <Grid RowDefinitions="3*, 7*">
-        <StackLayout Grid.Row="0">
-            <Grid>
-                <Image Source="cappuccino" Aspect="AspectFit"/>
-                <Border Margin="20,20,0,0" HorizontalOptions="Start" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
-                    <Image Source="back_arrow_white" Margin="12" Aspect="AspectFit"/>
-                </Border>
-                <Border Margin="0,20,20,0" HorizontalOptions="End" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
-                    <Image Source="bookmark_white" Margin="10" Aspect="AspectFit" />
-                </Border>
-            </Grid>
-        </StackLayout>
-        <StackLayout Grid.Row="1">
-            <Border BackgroundColor="#181D20" VerticalOptions="End" HeightRequest="1000" WidthRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="-1">
-                <StackLayout>
-                    <Border BackgroundColor="#262B2E" HeightRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="0" VerticalOptions="Start">
-                        <StackLayout Margin="30,25,30,25">
-                            <Grid>
-                                <Label Text="Cappuccino" TextColor="White" FontSize="20"/>
-                                <Label Text="$50" FontAttributes="Bold" TextColor="Orange" HorizontalOptions="End" FontSize="20"/>
-                            </Grid>
-                            <Label Text="Milk Coffee" TextColor="White" Margin="0,20,0,0" FontSize="16" Opacity="0.8"/>
-                            <Grid Margin="0,10,0,0">
-                                <HorizontalStackLayout>
-                                    <Border BackgroundColor="Transparent" StrokeThickness="0" HeightRequest="20" WidthRequest="20" HorizontalOptions="Start" VerticalOptions="Center">
-                                        <Image Source="star" Aspect="AspectFit"/>
-                                    </Border>
-                                    <Label Text="4.8" TextColor="White" Margin="5,0,0,0" VerticalOptions="Center"/>
-                                    <Label Text="(2035)" TextColor="White" Margin="10,0,0,0" VerticalOptions="Center" Opacity="0.6"/>
-                                </HorizontalStackLayout>
-                                <Border BackgroundColor="Orange" StrokeThickness="0" StrokeShape="RoundRectangle 10" HeightRequest="35" WidthRequest="-1" HorizontalOptions="End">
-                                    <Label Text="Add to Cart" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="10,-1,10,-1"/>
-                                </Border>
-                            </Grid>
-                        </StackLayout>
+        <Grid RowDefinitions="3*, 7*">
+            <StackLayout Grid.Row="0">
+                <Grid>
+                    <Image Source="cappuccino" Aspect="AspectFit"/>
+                    <Border Margin="20,20,0,0" HorizontalOptions="Start" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
+                        <Image Source="back_arrow_white" Margin="12" Aspect="AspectFit"/>
                     </Border>
-                </StackLayout>
-            </Border>
-        </StackLayout>
-
-
-    </Grid>
+                    <Border Margin="0,20,20,0" HorizontalOptions="End" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#282A2C" HeightRequest="40" WidthRequest="40">
+                        <Image Source="bookmark_white" Margin="10" Aspect="AspectFit" />
+                    </Border>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <Border BackgroundColor="#181D20" VerticalOptions="End" HeightRequest="1000" WidthRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="-1">
+                    <StackLayout>
+                        <Border BackgroundColor="#262B2E" HeightRequest="-1" StrokeShape="RoundRectangle 30" StrokeThickness="0" VerticalOptions="Start">
+                            <StackLayout Margin="30,25,30,25">
+                                <Grid>
+                                    <Label Text="Cappuccino" TextColor="White" FontSize="20"/>
+                                    <Label Text="$50" FontAttributes="Bold" TextColor="Orange" HorizontalOptions="End" FontSize="20"/>
+                                </Grid>
+                                <Label Text="Milk Coffee" TextColor="White" Margin="0,20,0,0" FontSize="16" Opacity="0.8"/>
+                                <Grid Margin="0,10,0,0">
+                                    <HorizontalStackLayout>
+                                        <Border BackgroundColor="Transparent" StrokeThickness="0" HeightRequest="20" WidthRequest="20" HorizontalOptions="Start" VerticalOptions="Center">
+                                            <Image Source="star" Aspect="AspectFit"/>
+                                        </Border>
+                                        <Label Text="4.8" TextColor="White" Margin="5,0,0,0" VerticalOptions="Center"/>
+                                        <Label Text="(2035)" TextColor="White" Margin="10,0,0,0" VerticalOptions="Center" Opacity="0.6"/>
+                                    </HorizontalStackLayout>
+                                    <Border BackgroundColor="#894B1E" StrokeThickness="0" StrokeShape="RoundRectangle 10" HeightRequest="-1" WidthRequest="-1" HorizontalOptions="End">
+                                        <Label Text="Add to Cart" TextColor="White" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Margin="15,10,15,10"/>
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Border>
+                        <StackLayout Margin="30,25,30,0">
+                        <Label Text="Description" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                        <Label Text="Cappuccino is a milk coffee without adding sugar into the coffee. Drinking it hot is the best choice ever. Buy it now and enjoy later!" Margin="0,20,0,0" TextColor="White" FontSize="16" Opacity="0.65"/>
+                            <Label Margin="0,30,0,0" Text="Choose Your Size" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <Grid ColumnDefinitions="*,*,*" Margin="25,20,25,0">
+                            <Border Margin="5,0,5,0" Grid.Column="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10" StrokeThickness="1" Stroke="#9c633a" BackgroundColor="#10181A">
+                                <Label Text="Small" Margin="20,10,20,10" TextColor="#9c633a" FontSize="16" HorizontalOptions="Center"/>
+                            </Border>
+                            <Border Margin="5,0,5,0" Grid.Column="1" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10" StrokeThickness="0" BackgroundColor="#212528">
+                                <Label Text="Small" Margin="20,10,20,10" TextColor="#7E8285" FontSize="16" HorizontalOptions="Center"/>
+                            </Border>
+                            <Border Margin="5,0,5,0" Grid.Column="2" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10" StrokeThickness="0" BackgroundColor="#212528">
+                                <Label Text="Small" Margin="20,10,20,10" TextColor="#7E8285" FontSize="16" HorizontalOptions="Center"/>
+                            </Border>
+                        </Grid>
+                    </StackLayout>
+                </Border>
+            </StackLayout>
+            <Button Grid.Row="1" Margin="25,0,25,20" BackgroundColor="#894B1E" CornerRadius="10" Text="Buy Now" FontAttributes="Bold" VerticalOptions="End"/>
+        </Grid>
 </ContentPage>

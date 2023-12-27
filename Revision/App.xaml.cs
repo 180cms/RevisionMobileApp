@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new View.ProfilePage();
+            MainPage = new View.MenuPage();
         }
     }
 }

@@ -13,6 +13,9 @@ namespace Revision
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("exo-black.otf","ExoBlack");
+                    fonts.AddFont("exo-bold.otf","ExoBold");
+                    fonts.AddFont("exo-medium.otf","ExoMedium");
                 });
 
 #if DEBUG
