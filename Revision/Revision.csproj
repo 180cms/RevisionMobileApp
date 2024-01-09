@@ -57,10 +57,13 @@
 	  <None Remove="Resources\Images\back_arrow_white.png" />
 	  <None Remove="Resources\Images\bookmark_white.png" />
 	  <None Remove="Resources\Images\cappuccino.jpg" />
+	  <None Remove="Resources\Images\coffee_grinder.jpg" />
 	  <None Remove="Resources\Images\magnifying_glass_white.png" />
 	  <None Remove="Resources\Images\man_default_profile.jpg" />
 	  <None Remove="Resources\Images\menu_square_black.png" />
 	  <None Remove="Resources\Images\menu_square_white.png" />
+	  <None Remove="Resources\Images\plus_sign_black.png" />
+	  <None Remove="Resources\Images\plus_sign_white.png" />
 	  <None Remove="Resources\Images\star.png" />
 	</ItemGroup>
 

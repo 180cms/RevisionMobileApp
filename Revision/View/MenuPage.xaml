@@ -4,7 +4,7 @@
              x:Class="Revision.View.MenuPage"
              Title="MenuPage">
     <ScrollView>
-        <Grid RowDefinitions="2*,8*" BackgroundColor="#181D20">
+        <Grid RowDefinitions="1*,9*" BackgroundColor="#181D20">
             <StackLayout Grid.Row="0">
                 <Grid>
                     <Border Margin="20,20,0,0" HorizontalOptions="Start" VerticalOptions="Start" Stroke="Black" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="#262B2E" WidthRequest="40" HeightRequest="40">
@@ -15,7 +15,7 @@
                     </Border>
                 </Grid>
             </StackLayout>
-            <StackLayout Grid.Row="1" Margin="25,0,25,0">
+            <StackLayout Grid.Row="1" Margin="25,5,25,0">
                 <Label Text="Great Coffee" TextColor="White" FontFamily="ExoBlack" FontSize="24"/>
                 <Label Text="Anytime Anywhere!" TextColor="White" FontFamily="ExoBlack" FontSize="24" />
                 <Border HeightRequest="50" BackgroundColor="Transparent" Margin="0,20,0,30" StrokeShape="RoundRectangle 10" StrokeThickness="0">
@@ -26,8 +26,101 @@
                     <Label Grid.Column="1" Text="Zeus Coffee" TextColor="White" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
                     <Label Grid.Column="2" Text="Starbucks" TextColor="White" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Grid>
-                <Image Source="americano"/>
-                <Image Source="cappuccino"/>
+                <Grid ColumnDefinitions="*,*" Margin="0,15,0,0">
+                    <StackLayout Grid.Column="0" Margin="0,0,5,0">
+                        <Border BackgroundColor="#23282B" StrokeThickness="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10">
+                            <StackLayout>
+                                <Grid>
+                                    <Border HeightRequest="140" WidthRequest="140" StrokeShape="RoundRectangle 10" BackgroundColor="#23282B" StrokeThickness="0" VerticalOptions="Start" Margin="0,15,0,0">
+                                        <Image Source="americano" Aspect="AspectFill" />
+                                    </Border>
+                                </Grid>
+                                <Label Text="Americano" TextColor="#DBDFE2" FontSize="20" FontAttributes="Bold" Margin="15,10,0,0"/>
+                                <Label Text="Black Coffee" TextColor="#DBDFE2" FontSize="12" Margin="15,10,0,0"/>
+                                <Grid ColumnDefinitions="*,*" Margin="15,10,0,15">
+                                    <Label Grid.Column="0" Text="$8.00" TextColor="#DBDFE2" FontSize="16" Margin="0,8,0,0"/>
+                                    <Border Grid.Column="1" HeightRequest="30" WidthRequest="30" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="DarkOrange" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,10,0">
+                                        <Image Source="plus_sign_white"/>
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Border>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Margin="0,0,5,0">
+                        <Border BackgroundColor="#23282B" StrokeThickness="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10">
+                            <StackLayout>
+                                <Grid>
+                                    <Border HeightRequest="140" WidthRequest="140" StrokeShape="RoundRectangle 10" BackgroundColor="#23282B" StrokeThickness="0" VerticalOptions="Start" Margin="0,15,0,0">
+                                        <Image Source="cappuccino" Aspect="AspectFill" />
+                                    </Border>
+                                </Grid>
+                                <Label Text="Cappuccino" TextColor="#DBDFE2" FontSize="20" FontAttributes="Bold" Margin="15,10,0,0"/>
+                                <Label Text="Milk Coffee" TextColor="#DBDFE2" FontSize="12" Margin="15,10,0,0"/>
+                                <Grid ColumnDefinitions="*,*" Margin="15,10,0,15">
+                                    <Label Grid.Column="0" Text="$12.00" TextColor="#DBDFE2" FontSize="16" Margin="0,8,0,0"/>
+                                    <Border Grid.Column="1" HeightRequest="30" WidthRequest="30" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="DarkOrange" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,10,0">
+                                        <Image Source="plus_sign_white"/>
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Border>
+                    </StackLayout>
+                </Grid>
+                <Grid ColumnDefinitions="*,*" Margin="0,10,0,0">
+                    <StackLayout Grid.Column="0" Margin="0,0,5,0">
+                        <Border BackgroundColor="#23282B" StrokeThickness="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10">
+                            <StackLayout>
+                                <Grid>
+                                    <Border HeightRequest="140" WidthRequest="140" StrokeShape="RoundRectangle 10" BackgroundColor="#23282B" StrokeThickness="0" VerticalOptions="Start" Margin="0,15,0,0">
+                                        <Image Source="cappuccino" Aspect="AspectFill" />
+                                    </Border>
+                                </Grid>
+                                <Label Text="Cappuccino" TextColor="#DBDFE2" FontSize="20" FontAttributes="Bold" Margin="15,10,0,0"/>
+                                <Label Text="Milk Coffee" TextColor="#DBDFE2" FontSize="12" Margin="15,10,0,0"/>
+                                <Grid ColumnDefinitions="*,*" Margin="15,10,0,15">
+                                    <Label Grid.Column="0" Text="$12.00" TextColor="#DBDFE2" FontSize="16" Margin="0,8,0,0"/>
+                                    <Border Grid.Column="1" HeightRequest="30" WidthRequest="30" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="DarkOrange" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,10,0">
+                                        <Image Source="plus_sign_white"/>
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Border>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Margin="0,0,5,0">
+                        <Border BackgroundColor="#23282B" StrokeThickness="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10">
+                            <StackLayout>
+                                <Grid>
+                                    <Border HeightRequest="140" WidthRequest="140" StrokeShape="RoundRectangle 10" BackgroundColor="#23282B" StrokeThickness="0" VerticalOptions="Start" Margin="0,15,0,0">
+                                        <Image Source="americano" Aspect="AspectFill" />
+                                    </Border>
+                                </Grid>
+                                <Label Text="Americano" TextColor="#DBDFE2" FontSize="20" FontAttributes="Bold" Margin="15,10,0,0"/>
+                                <Label Text="Black Coffee" TextColor="#DBDFE2" FontSize="12" Margin="15,10,0,0"/>
+                                <Grid ColumnDefinitions="*,*" Margin="15,10,0,15">
+                                    <Label Grid.Column="0" Text="$8.00" TextColor="#DBDFE2" FontSize="16" Margin="0,8,0,0"/>
+                                    <Border Grid.Column="1" HeightRequest="30" WidthRequest="30" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="DarkOrange" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,10,0">
+                                        <Image Source="plus_sign_white"/>
+                                    </Border>
+                                </Grid>
+                            </StackLayout>
+                        </Border>
+                    </StackLayout>
+                </Grid>
+                <Label Text="Special For You" FontSize="24" TextColor="#DBDFE2" Margin="0,20,0,0"/>
+                <Border BackgroundColor="#23282B" StrokeThickness="0" WidthRequest="-1" HeightRequest="-1" StrokeShape="RoundRectangle 10" Margin="0,10,0,10">
+                    <HorizontalStackLayout>
+                        <Border HeightRequest="120" WidthRequest="120" StrokeShape="RoundRectangle 10" BackgroundColor="#23282B" StrokeThickness="0" VerticalOptions="Start" HorizontalOptions="Start" Margin="15,15,0,15">
+                            <Image Source="coffee_grinder" Aspect="AspectFill" />
+                        </Border>
+                        <StackLayout>
+                            <Label Text="Coffee Grinder" TextColor="#DBDFE2" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" HorizontalOptions="Center" Margin="15,15,0,0"/>
+                            <Label Text="Coffee beans are nice" TextColor="#DBDFE2" FontSize="12" Margin="15,10,0,0"/>
+                        </StackLayout>
+                        <Border HeightRequest="30" WidthRequest="30" StrokeThickness="0" StrokeShape="RoundRectangle 10" BackgroundColor="DarkOrange" VerticalOptions="End" HorizontalOptions="End" Margin="0,0,0,10">
+                            <Image Source="plus_sign_white"/>
+                        </Border>
+                    </HorizontalStackLayout>
+                </Border>
             </StackLayout>
         </Grid>
     </ScrollView>
